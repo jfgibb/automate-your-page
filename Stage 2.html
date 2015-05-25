@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+
+<!-- This is my Intro to Programming Nanodegree Stage 2 Automate HTML and CSS -->
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>John's Stage 2 Notes </title>
+  <link rel="stylesheet" href="John-Style-Stage-2.css">
+</head>
+
+<body>
+  <div class="intro">
+    <h1> John's Coding Notebook Stage 2</h1>    
+  </div> 
+  <br>
+
+  <div class="Contents">
+    <h1>Table of Contents</h1>
+    <ol>
+      <li><a href="#lesson-1">Lesson 1: Introduction - Automate HTML and CSS Generation</a>
+        <ul>
+          <li><a href="#lesson-1-1">Stage 2 Overview</a></li>           
+        </ul>
+      </li>
+      <li class="TOC-lesson"><a href="#lesson-2">Lesson 2: Introduction to Serious Programming</a>
+        <ul>
+          <li><a href="#lesson-2-1">What is Computer Science</a></li>
+          <li><a href="#lesson-2-2">The Python Programming Language</a></li>
+          <li><a href="#lesson-2-3">Starting Python</a></li>
+          <li><a href="#lesson-2-4">Why not just use normal language to program</a></li>
+          <li><a href="#lesson-2-5">Python Grammer</a></li>
+        </ul>
+      </li>
+      <li class="TOC-lesson"><a href="#lesson-3">Lesson 3: The Building Blocks of Python</a>
+        <ul>
+          <li><a href="#lesson-3-1">Basic Operators and Expressions</a></li>
+          <li><a href="#lesson-3-2">Varriables</a></li>
+          <li><a href="#lesson-3-3">Strings and String Indexing</a></li>          
+        </ul>
+      </li>
+      <li class="TOC-lesson"><a href="#lesson-4">Lesson 4: Functions, Conditional Statements, and Loops</a>
+        <ul>
+          <li><a href="#lesson-4-1">Functions</a></li>
+          <li><a href="#lesson-4-2">Conditional Statements</a></li>
+          <li><a href="#lesson-4-3">Loops</a></li>
+          <li><a href="#lesson-4-4">Structured Data:  Lists and For Loops</a></li>
+        </ul>
+      </li> 
+      <li class="TOC-lesson"><a href="#lesson-5">Lesson 5: Debugging and Problem Solving</a>
+        <ul>
+          <li><a href="#lesson-5-1">Debugging</a></li>
+          <li><a href="#lesson-5-2">Problem Solving</a></li>
+         </ul>
+      </li> 
+      <li class="TOC-lesson"><a href="#lesson-6">Lesson 6: Useful Links</a>
+        <ul>
+          <li><a href="#lesson-6-1">Useful Links</a></li>
+         </ul>
+      </li>     
+    </ol>  
+    <div class="image">
+    <img src="http://pubpages.unh.edu/~arv4449/html.jpg" width="200" height="180" alt="HTML Logo">
+    <img src="http://static.commentcamarche.net/www.commentcamarche.net/faq/images/9100-css-logo-medium.png" alt="CSS Logo">
+    <img src="https://www.python.org/static/community_logos/python-logo-master-v3-TM.png" width="405" height="180" alt="Python Logo">
+    </div>
+  </div>
+  
+  <div class="note-heading">
+    <h1> Detailed Notes</h1>    
+  </div> 
+
+  <div class="lesson">
+    <h2 id="lesson-1">Lesson 1: Introduction - Automate HTML and CSS Generation Lesson</h2>
+    <div class="concept" id="lesson-1-1">
+      <div class="concept-title">
+        Stage 2 Overview
+      </div>
+      <div class="concept-description">
+        <ul>
+          <li>Manually entering content to create websites is too time consuming</li>
+          <li>Stage 2 will introduce the <a href="http://en.wikipedia.org/wiki/Python_%28programming_language%29">Python</a> programing language to allow HTML and CSS file gernation to be automated</li>
+          <li>One important thing to take out of this lesson is to learn to think like a programmer</li>
+          <li>The <a href="http://www.sublimetext.com/">Sublime</a> text editor should be used for this lesson</li>
+          <li>The lesson will introduce variables and functions that are the heart of programing</li>
+        </ul>
+      </div>
+    </div>    
+  </div> <!-- Lesson 1 End Tag -->
+
+  <div class="lesson">
+    <h2 id="lesson-2">Lesson 2: Introduction to Serious Programming</h2>
+    <div class="concept" id="lesson-2-1">
+      <div class="concept-title">
+        What is Computer Science
+      </div>
+      <div class="concept-description">
+          <ul>
+           <li><a href="http://en.wikipedia.org/wiki/Computer_science">Computer Science</a> is about how to solve problems by breaking the down into smaller pieces</li>
+           <li>Then define a sequence of steps that you can precisely solve each smaller problem</li>
+           <li>The steps must be able to be executed by a computer</li>
+           <li>Programing is the core of Computer Science</li>
+           <li>Focus on how to break down problems and not solving them in one big sweep</li>
+           <li>A computer is a multi-purpose device (it can do many things), not like a toaster that has a very focused purpose</li>
+           <li>But a computer can’t do anything without a program</li>
+           <li>A program tells the computer what to do</li>
+           <li>A program must be very systematic and precise because a computer at its heart is "dumb" and only does what its told to by the program</li>
+           <li>Computers can execute programs very very fast</li>
+          </ul>            
+      </div>
+    </div>
+    <div class="concept" id="lesson-2-2">
+      <div class="concept-title">
+        The Python Programming Language
+      </div>
+      <div class="concept-description">
+        <ul>
+          <li>Python is one of many programming languages availalbe</li>
+          <li>It is a high level language and relatively easy to use compared to lover level languages</li>
+          <li>This stage will use Python to introduce programing and the many concepts common to programing</li>
+          <li>The programs we will create will run on the Python program</li>
+          <li>Python defines a set of syntax and rules that must be followed by the programer for the computer to run the program</li>
+          <li>The Python program will take the high level statements in the program and convert them to the low level language the computer understands</li>
+          <li>This function is called an interperter</li>
+          <li>The following quote from Dave contains 3 of the 5 ways we can think like a programmer "The programs you'll write in this class will be Python code. Those will be input to another program which is a Python interpreter that follows the instructions in your code and it does that by following the instruction in its code... and you'll be able to run all that using your web browser."</li>
+        </ul>
+          <div class="indent">
+            <ul>
+              <li>The line "...follows the instructions in your code..." references the procedural thinking required of programmers</li>
+              <li>The entire quote demonstrates a deep technological empathy (which you don't need to have at this point) for how computers and programs work</li>
+              <li>When Dave thinks of a Python program, a Python interpreter, and a web browser as different versions of the same thing (a computer program) he's showing abstract thinking</li>
+            </ul>
+          </div>        
+      </div>
+    </div>
+    <div class="concept" id="lesson-2-3">
+      <div class="concept-title">
+        Starting Python
+      </div>
+      <div class="concept-description">
+        <ul>
+          <li>Python code is entered into an editor or a command line</li>
+          <li>The "Print" command will print something to the screen</li>
+          <li>The format of <em>Print</em> is Print &lt;expresion&gt;</li>
+          <li>The expression will be printed to the screen</li> 
+          <li>Expresions can be simple (a word) or complex (results of a math equestion)</li>  
+        </ul>
+      </div>
+    </div>
+    <div class="concept" id="lesson-2-4">
+      <div class="concept-title">
+        Why Not Just use Normal Language to Program
+      </div>
+      <div class="concept-description">
+        <ul>
+          <li>It would seem simpler to program a computer using natual language like Mr. Scott tries to in <a href = "https://www.youtube.com/watch?v=hShY6xZWVGE">Star Trek IV</a></li>
+          <li>But natural languages are ambiguous and a computer needs precise instructions</li>
+          <li>Natural languages are very verbose; in a programming language a complex item can be defined in a few lines</li>
+          <li>A programing language will allow us to tell a computer what to do in a very precise way</li>          
+        </ul>
+      </div>
+    </div>
+    <div class="concept" id="lesson-2-5">
+      <div class="concept-title">
+        Python Rules and Grammer
+      </div>
+      <div class="concept-description">
+        <ul>
+          <li>The Python interpreter only understands the rules of the python language, if you do something not supported it will create an error when you run the program</li>
+          <li>Python has a grammar like a natural language does</li>  
+          <li>The difference in Python is you have to follow the grammar where in natural language you can not follow the grammar and someone may still be able to understand</li>
+          <li>Grammar based on Backus-Naur form:</li>
+        </ul>
+          <div class="indent">
+            <ul>
+              <li>Created by John Backus - leading developer of Fortran in the 1950s</li>
+              <li>Form included a statement of code with a comment on what that line did</li>
+              <li>First ways to program were not precise enough and this form helped programs be more precise</li>
+              <li>Backus-Naur was invented to precisely describe exactly the language in an easy to understand and also be very concise</li>
+            </ul>
+          </div>
+        <ul>
+        <li>Due to this Python grammar is much more precise than english grammar</li>          
+        </ul>
+      </div>
+    </div>
+  </div> <!-- Lesson 2 End Tag -->
+
+  <div class="lesson">
+    <h2 id="lesson-3">Lesson 3: The Building Blocks of Python</h2>
+      <div class="concept" id="lesson-3-1">
+        <div class="concept-title">
+          Basic Operators and Expessions
+        </div>
+        <div class="concept-description">
+          <ul>
+            <li>An <em>Expression</em> is something that has a value</li>
+            <li>Two expressions can be combined with an <em>operator</em> to create a new expression</li>
+            <li>Some examples of python operators are +, -, *, and /</li>
+            <li>Example, Print 5 + 5 will result in 10 being printed</li>
+            <li>Numbers in python can be differnt types, integers and floats are two examples</li>
+            <li>An integer will not have  decimal point while a float will</li>
+            <li>Its important to understand what type you are working with or the result may not be what you expect</li>
+            <li>For example, multipling two integers will result in an integar but multipling an integar and float will result in a float</li>
+          </ul>
+        </div>
+      </div>
+      <div class="concept" id="lesson-3-2">
+        <div class="concept-title">
+          Varriables
+        </div>
+        <div class="concept-description">
+          <ul>
+            <li>The varriable is one of the most important concepts in computer programming</li>
+            <li>A varriable is a place to store different data types (numbers, strings) within the program and to change them (hence the name varriable) as needed</li>
+            <li>Varriables are created using a varriable name, the assigment operator (assigment uses the = sign), and then an expression</li>
+            <li>The varriable name refers to the value of the expression that was assigned</li>   
+            <li>An example:  My_Name = 'John'</li>
+            <li>My_Name if the varriable name and John if the value it holds</li>
+            <li>Varriable Names should be descriptive of what they hold</li>
+            <li>Its important to note the = sign in Python does not mean equal like it does in math, it means assignement.  The == means equal in Python</li>
+            <li>Varriables must be initiallized before they are used in a program.  This means they have to have something assigned to it even if that value is nothing (empty string)</li>
+          </ul>
+        </div>
+      </div>
+      <div class="concept" id="lesson-3-3">
+        <div class="concept-title">
+          Strings and String Indexing
+        </div>
+        <div class="concept-description">
+          <ul>
+            <li>A <em>String</em> is a sequence of characters surrounded by single quotes </li>
+            <li>Example:  'John'</li>
+            <li>The + operator can be used to concatinate two strings</li> 
+            <li>Example:  'Jo' + 'hn' becomes 'John'</li>
+            <li>A number can be a string if it has quotes around it '22' but you cannot add it to an integer if it is</li>
+            <li>Indexing allows us to pull out parts of a string based on the position of that part within the string</li>
+            <li>Each character within a string has a position number or index</li>
+            <li>The first character is a position 0, the second at position 1 and so on</li>
+            <li>'John' - J is at position 0</li>
+            <li>Use the [ ] to pull out the character at the position</li>
+            <li>'John[2] will output 'h'</li>
+            <li>If the string is assigned to avarriable the varriable name can be used</li>
+            <li>My_Name = 'John' My_Name[3] would output 'n'</li>
+            <li>A negitive index will search from the end of the string.  My_Name[-1] will give 'n'</li>   
+            <li>An index range can be give to get more than one character. My_Name[1:2] would give 'on'</li> 
+            <li>The <em>.find</em> method is a built in program in python to ind a sub-string within a larger string</li>  
+            <li>Format:  &lt;sting&gt;.find(search term)</li>   
+            <li>The output is the starting location (index) of the search term, if the search term is not found the output is -1</li>
+            <li>The # symple is to create a comment in a python program (the interperter will ignore the line</li>
+            <li>The triple quotes """ is used to create multi-line comments</li>
+          </ul>
+        </div>
+      </div>
+  </div> <!-- Lesson 3 End Tag -->
+
+  <div class="lesson">
+    <h2 id="lesson-4">Lesson 4: Functions, Conditionals, and Loops</h2>
+      <div class="concept" id="lesson-4-1">
+        <div class="concept-title">
+          Functions
+        </div>
+        <div class="concept-description">
+          <ul>
+            <li>Functions are smaller sub-sections of a program that take input from another part of the program, run some code, and send output back to the part of the program that made the call of the function</li>
+            <li>They allow the program to be broken down into small sub-programs and also allow a certain thing to be coded once and accessed each time its needed from the larger program</li>
+            <li>Functions are the key thing that allows for complex programs to be created</li>
+            <li>Functions are all about taking things as input and producing some output</li>
+            <li>Function syntax:  &lt;function name&gt; (input, input, ...)</li>
+            <li>The inputs are the varriables passed into it and there can be any number of them but the call must pass in that many inputs</li>
+            <li>Names of the inputs do not have to be the same as the names used in the calling section of the program</li>
+            <li>To pass the result back to the calling section of code the <em>return</em> word is used:  &lt;return&gt;</li>
+            <li>The code that executes and the varriables used inside a function are not visable outside the function</li>
+            <li>Functions can call other functions</li>            
+          </ul>
+        </div>
+      </div>
+      <div class="concept" id="lesson-4-2">
+        <div class="concept-title">
+          Conditional Statements
+        </div>
+        <div class="concept-description">
+          <ul>
+            <li>Conditional statemens (if/then) are used in programs to evaluate an expression (test expression) and depending on the result take one action or another</li>
+            <li>A number of operators are available for the test expression including equal to (==), not equal to (!=), less than (&lt;), and greater than (&gt;)</li>
+            <li>If the restult of the test expression is True then the code that follows gets executed</li>
+            <li>If the test expression is False then there are a couple of options, one is to do nothing and just continue with the program and the second is to use the <em>else</em> statement to execture a different set of code</li>               
+            <li>An example:  if My_Name == 'John' print 'correct', else print 'incorrect'</li> 
+            <li>The <em>and</em> and <em>or</em> booleans can be used in the if statement to execute the code if multiple test cases are all true (and) or if at least one of a list of test cases are true (or)</li>
+            <li>If statements can be nested within other if statements</li>           
+          </ul>
+        </div>
+      </div>
+      <div class="concept" id="lesson-4-3">
+        <div class="concept-title">
+          Loops
+        </div>
+        <div class="concept-description">
+          <ul>
+            <li>Computers have to do many tasks over and over again and it would be difficult to code each itteration directly </li>
+            <li>Loops help solve this problem and allow repetive taksed to be done over and over again</li>
+            <li>A loop must have a way to exit the loop or it will run forever</li> 
+            <li>Loops use test expressions just like if statements to determine if a loop should keep going or exit</li>
+            <li>Each time through the loop the test expression is tested to see if its True, if so the loop is exited and if not the loop keeps going</li>
+            <li>The same code is executed each time through the loop but the inputs may have changed</li>
+            <li>If statements can be used within a loop</li>
+            <li>The <em>while</em> loop is the first loop type we will look at</li>
+            <li>while (text expression is true):</li>
+          </ul>
+            <div class="indent">
+              
+                execute code within the loop
+              
+            </div>
+            <ul>
+              <li>The while loop usually uses a counter that gets incremented each time through the loop.</li>
+              <li>The counter will be compared to a value in the test expression and when the expression becomes false the program exists the loop</li>
+              <li>The <em>break</em> statement can be used to force an exit for the loop is a certain condition is met</li>            
+            </ul>
+          </div>
+        </div>
+      
+      <div class="concept" id="lesson-4-4">
+        <div class="concept-title">
+          Structured Data:  Lists and For Loops
+        </div>
+        <div class="concept-description">
+          <ul>
+            <li>The string is the most basic form of structured data made up of a sequence of characters</li>
+            <li>We can operate down to each character within a string</li>
+            <li>A string has limits because it only holds characters</li>
+            <li>A <em>list</em> is a more complex data type because elements can be many different types (strings, ints, other lists)</li>
+            <li>List format:  x=[a, b, c]</li>
+            <li>Indexing a list gives the value at the index position x[0] would be 'a'</li>
+            <li>An empty list can be created y = [ ]</li>
+            <li>The other big advantage of Lists over strings is the concept <em>mutation</em></li>
+            <li>Mutation allows us to replace a certain element in the list</li>
+            <li>Mutation does not create a new list it actually changes the existing list</li>
+            <li>If two varriables point at the same list element and that element is mutated both varriables were changed</li>
+            <li>When a list is passed into a function the function operates on the origial list so changes are seen globally</li>
+            <li>the .append method can be used to append an element at the end of a list</li>
+            <li>The '+' operator will concatenate two lists</li>
+            <li>The len method returns the length of the list (note, if a list is an element in the outer list len does not count whats in the inner list)</li>
+            <li>The <em>for loop</em> can be used to cycle through all elements of a list and execute some code on each element</li>
+            <li>The format is:  for &lt;name&gt; in &lt;value&gt;:</li>
+          </ul>
+            <div class="indent">
+              
+                block of code
+              
+            </div>
+          <ul>
+          <li>Each time through the loop the next index in the list will be assigned to name and the block of code execututed.  This is done till all elements in the list have passsed via the loop</li>
+          </ul>                     
+        </div>
+      </div> 
+  </div> <!-- Lesson 4 End Tag -->
+  <div class="lesson">
+    <h2 id="lesson-5">Lesson 5: Debugging and Problem Solving</h2>
+      <div class="concept" id="lesson-5-1">
+        <div class="concept-title">
+          Debugging
+        </div>
+        <div class="concept-description">
+          <ul>
+            <li>Bugs will happen during coding, there is no way around it</li>
+            <li>The important thing is to have a strategy to get rid of bugs</li>
+            <li>There are some bugs that will cause the program not to run by creating a traceback error</li>
+            <li>This is useful as it tells what type of error and what line it occured on</li>
+            <li>Other bugs will not cause an error but when the program runs the wrong output is created</li>
+            <li>These bugs are harder to notice and then find and fix</li>
+            <li>Using temporary print statements in different parts of the code can be very useful in debugging because you can look at varriables at different points</li>
+            <li>Testing of the code is vital to finding bugs</li>
+            <li>Test cases should incude a consise range of potential inputs and then looking to ensure the outputs are what is expected</li>            
+          </ul>
+        </div>
+      </div>
+      <div class="concept" id="lesson-5-2">
+        <div class="concept-title">
+          Problem Solving
+        </div>
+        <div class="concept-description">
+          <ul>
+            <li>The main purpose of programming is to solve problems therefore it is a key skill to master</li>
+            <li>The first thing to do when solving a problem is to ensure you fully understand the problem else you may solve the wrong thing</li>
+            <li>Computational problems have inputs and desired outputs, we must understand each</li>
+            <li>All possible inputs are a set</li>   
+            <li>The relationship between the inputs produce the desired output</li> 
+            <li>Validate assumptions on the inputs which could limit the number of total inputs</li>
+            <li>Clearly define what the expected outputs are</li>
+            <li>Create some examples to test your inputs, outputs, and assumptions</li>
+            <li>Consider how to solve the problem in a systematic way as a human solves the problem</li> 
+            <li>Next write <em>Pseudocode</em> before writing actual code:</li> 
+          </ul>
+            <div class="indent">
+              <ul>
+                <li>Follows a programing style but is not tied to the exact rules of a language</li>
+                <li>Used to write out the algorithm to solve the proglem</li>
+                <li>Sometimes the pseudocode will not be the simplist way to solve the problem as the way humans think is not always the more efficient way to do something</li>                
+              </ul>
+            </div>              
+          <div>
+            <ul>
+              <li>Dave's Rules for Solving Problems:</li>
+            </ul>
+            <div class="indent">
+              <ul>
+                <li>Step 0:  Don't Panic</li>
+                <li>Step 1:  What are the inputs</li>
+                <li>Stap 2:  What are the outputs</li>
+                <li>Step 3:  Work through some examples by hand</li> 
+                <li>Step 4:  Find a simple and mechanical solution</li>
+                <li>Step 5:  Develop the solution incrementally in small steps and test as you go</li>           
+              </ul>
+            </div> 
+          </div>
+        </div>
+      </div>
+  </div> <!-- Lesson 5 End Tag -->
+
+  <div class="lesson">
+    <h2 id="lesson-6">Lesson 6: Useful Links</h2>
+    <div class="concept" id="lesson-6-1">
+      <div class="concept-title">
+        Useful Links
+      </div>
+      <div class="concept-description">
+        <ul>
+          <li><a href="https://www.python.org/">Python Website</a></li>
+          <li><a href="https://docs.python.org/2/tutorial/">The Python Tutorial</a></li>
+          <li><a href="https://www.python.org/doc/">Python Documentation</a></li>
+          <li><a href="http://en.wikipedia.org/wiki/For_loop">For Loop</a></li>
+          <li><a href="http://en.wikipedia.org/wiki/While_loop">While Loop</a></li>
+          <li><a href="http://en.wikipedia.org/wiki/Data_type">Data Types</a></li>
+        </ul>
+      </div>
+    </div>    
+  </div> <!-- Lesson 6 End Tag -->
+
+</body>
+</html>
